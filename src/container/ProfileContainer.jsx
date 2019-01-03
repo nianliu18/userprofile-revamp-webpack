@@ -36,4 +36,10 @@ class ProfileContainer extends Component {
     );
   }
 }
+
+
+const wrapper = document.getElementById("create-article-form");
+wrapper ? ReactDOM.render(<ProfileContainer />, wrapper) : false;
+
+
 export default ProfileContainer;
