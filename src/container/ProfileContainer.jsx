@@ -8,7 +8,7 @@ class ProfileContainer extends Component {
   constructor() {
     super();
     this.state = {
-      seo_title: ""
+      seo_title: "Bananas"
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -23,6 +23,7 @@ class ProfileContainer extends Component {
   render() {
     const { seo_title } = this.state;
     return (
+      <div>
       <form id="article-form">
         <Input
           text="SEO title"
@@ -33,6 +34,10 @@ class ProfileContainer extends Component {
           handleChange={this.handleChange}
         />
       </form>
+      <div className='loadbar'>
+        <p>...loading</p>
+      </div>
+      </div>
     );
   }
 }
