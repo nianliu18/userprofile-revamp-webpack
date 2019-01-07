@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import Input from "../components/Input.jsx";
 
 
-
 class ProfileContainer extends Component {
   constructor() {
     super();
@@ -44,9 +43,6 @@ class ProfileContainer extends Component {
   }
 }
 
-
-const wrapper = document.getElementById("create-article-form");
-wrapper ? ReactDOM.render(<ProfileContainer />, wrapper) : false;
 
 
 export default ProfileContainer;
