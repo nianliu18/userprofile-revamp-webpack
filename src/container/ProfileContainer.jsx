@@ -19,7 +19,7 @@ class ProfileContainer extends Component {
     this.setState({ [event.target.id]: event.target.value });
   }
 
-  
+
   render() {
     const { seo_title } = this.state;
     return (
@@ -35,7 +35,9 @@ class ProfileContainer extends Component {
         />
       </form>
       <div className='loadbar'>
+        <div className='myBar'>
         <p>...loading</p>
+        </div>
       </div>
       </div>
     );
