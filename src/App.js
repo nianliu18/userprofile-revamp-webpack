@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './main.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import NavBar from './components/NavBar.jsx';
+import About from './components/About.jsx';
+import Experience from './components/Experience.jsx';
+import Projects from './components/Projects.jsx';
+
 
 
 class App extends Component {
@@ -12,12 +17,18 @@ class App extends Component {
 
     render(){
         return (
-            <div>
-               <h1> Online Profile Here </h1>
-               <div className="loaderbar">
-                   Loading...
-               </div>
-            </div>
+            <BrowserRouter>
+                <div className='App'>
+                    <div>
+                        <NavBar />
+                    </div>
+                        <Switch>
+                            <Route path='/' exact render={props => (<About/>)} />
+                            <Route path='/experience' render={props => (<Experience/>)} />
+                            <Route path='/projects' render={props => (<Projects/>)} />
+                        </Switch>
+                </div>
+            </BrowserRouter>
         )
     }
 }

@@ -4,8 +4,9 @@ body {
   font-family: sans-serif;
 }
 
-.loadbar{
+.loaderbar{
   height: 20px;
   width: 400px;
+  border: solid 1px black;
 }
 
