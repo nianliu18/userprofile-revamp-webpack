@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ProfileContainer from './container/ProfileContainer.jsx';
+import ProfileContainer from './container/App.js';
 
 
-ReactDom.render(<ProfileContainer />, document.getElementById('root'));
-// //fix email
+ReactDOM.render(<App />, document.getElementById("app"));
