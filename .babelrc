@@ -7,4 +7,5 @@
         //so babel can deal with class properties
         "@babel/plugin-proposal-class-properties"
     ]
-  }
+}
+

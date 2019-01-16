@@ -2,6 +2,7 @@ import React from 'react';
 import nianImg from '../assets/profile-nl.jpg';
 
 
+
 const About = (props) => {
   return (
     <div className="container">

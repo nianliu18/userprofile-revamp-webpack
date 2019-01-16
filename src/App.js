@@ -22,6 +22,7 @@ class App extends Component {
                     </div>
                         <Switch>
                             <Route exact path='/' render={props => (<About/>)} />
+                            <Route path='/' exact render={props => (<About/>)} />
                             <Route path='/experience' render={props => (<Experience/>)} />
                             <Route path='/projects' render={props => (<Projects/>)} />
                         </Switch>
@@ -30,4 +31,7 @@ class App extends Component {
         )
     }
 }
+
 export default App;
+
+// ReactDOM.render(<App />, document.getElementById("root"));

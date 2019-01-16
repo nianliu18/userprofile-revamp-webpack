@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.loaderbar{
+  height: 20px;
+  width: 400px;
+  border: solid 1px black;
+}
+
