@@ -6,6 +6,7 @@ import About from './components/About.jsx';
 import Experience from './components/Experience.jsx';
 import Projects from './components/Projects.jsx';
 
+//start building for two hours tomorrow. along with testing.
 
 class App extends Component {
     constructor() {
